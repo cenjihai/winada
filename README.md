@@ -25,13 +25,17 @@ pub struct AdapterInfo {
 
 ```rust
 extern crate winada;
+
 use winada::*;
 
-let all_adapter_info : Vec<AdapterInfo> = unsafe { get_all_adapter_info() };
+fn main() {
 
-let iter = all_adapter_info.iter();
-for adapter_info in iter {
-println!("Adapter info: {:?}", adapter_info);
+    let all_adapter_info : Vec<AdapterInfo> = unsafe { get_all_adapter_info() };
+
+    let iter = all_adapter_info.iter();
+    for adapter_info in iter {
+        println!("Adapter info: {:?}", adapter_info);
+    }
 }
 ```
 
