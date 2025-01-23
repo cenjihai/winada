@@ -18,18 +18,19 @@ use winapi::shared::ws2ipdef::SOCKADDR_IN6;
 
 /// # Exmaple
 #[allow(dead_code)]
+#[derive(Debug)]
 pub struct AdapterInfo {
-    pub(crate) adapter_name: String,
-    pub(crate) friendly_name: String,
-    pub(crate) description: String,
-    pub(crate) state: u32,
-    pub(crate) in_addr: Vec<String>,
-    pub(crate) in6_addr: Vec<String>,
-    pub(crate) in_gw_addr: Vec<String>,
-    pub(crate) in6_gw_addr: Vec<String>,
-    pub(crate) in_dns_addr: Vec<String>,
-    pub(crate) in6_dns_addr: Vec<String>,
-    pub(crate) ip_mask: String,
+    pub adapter_name: String,
+    pub friendly_name: String,
+    pub description: String,
+    pub state: u32,
+    pub in_addr: Vec<String>,
+    pub in6_addr: Vec<String>,
+    pub in_gw_addr: Vec<String>,
+    pub in6_gw_addr: Vec<String>,
+    pub in_dns_addr: Vec<String>,
+    pub in6_dns_addr: Vec<String>,
+    pub ip_mask: String,
 }
 
 /// # Exmaple
