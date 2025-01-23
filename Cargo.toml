@@ -1,6 +1,6 @@
 [package]
 name = "winada"
-version = "0.1.1"
+version = "0.1.11"
 edition = "2021"
 description = "获取Windows 本机所有适配器信息"
 license = "MIT"
