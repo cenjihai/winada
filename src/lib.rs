@@ -10,7 +10,7 @@ mod tests {
             let all_adapter: Vec<AdapterInfo> = get_all_adapter_info();
             let iter = all_adapter.iter();
             for adapter in iter {
-                println!("{:?}", adapter);
+                println!("{:?}", adapter.adapter_name);
             }
         }
     }

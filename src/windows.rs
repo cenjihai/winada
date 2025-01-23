@@ -17,7 +17,7 @@ use winapi::shared::in6addr::{in6_addr};
 use winapi::shared::ws2ipdef::SOCKADDR_IN6;
 
 /// # Exmaple
-#[derive(Debug)]
+#[allow(dead_code)]
 pub struct AdapterInfo {
     pub(crate) adapter_name: String,
     pub(crate) friendly_name: String,
