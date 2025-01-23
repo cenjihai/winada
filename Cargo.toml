@@ -1,0 +1,8 @@
+[package]
+name = "winada"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+winapi = {version = "0.3.9", features = ["iphlpapi", "winerror", "minwindef", "iptypes", "ws2def", "ws2tcpip", "in6addr", "ws2ipdef"] }
+ipnet = "2.11.0"
