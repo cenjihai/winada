@@ -16,7 +16,16 @@ use winapi::ctypes::c_void;
 use winapi::shared::in6addr::{in6_addr};
 use winapi::shared::ws2ipdef::SOCKADDR_IN6;
 
-
+/// # Exmaple
+/// ```
+///
+/// let adapter_info = get_all_adapter_info();
+/// let iter = all_adapter.iter();
+///             for adapter in iter {
+///                 println!("{:?}", adapter);
+///             }
+///
+/// ```
 #[derive(Debug)]
 pub struct AdapterInfo {
     pub(crate) adapter_name: String,
@@ -32,6 +41,16 @@ pub struct AdapterInfo {
     pub(crate) ip_mask: String,
 }
 
+/// # Exmaple
+/// ```
+///
+/// let adapter_info = get_all_adapter_info();
+/// let iter = all_adapter.iter();
+///             for adapter in iter {
+///                 println!("{:?}", adapter);
+///             }
+///
+/// ```
 pub unsafe fn get_all_adapter_info() -> Vec<AdapterInfo> {
 
     let mut adapter_info_list : Vec<AdapterInfo> = Vec::new();
