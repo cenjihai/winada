@@ -17,15 +17,6 @@ use winapi::shared::in6addr::{in6_addr};
 use winapi::shared::ws2ipdef::SOCKADDR_IN6;
 
 /// # Exmaple
-/// ```
-///
-/// let adapter_info = get_all_adapter_info();
-/// let iter = all_adapter.iter();
-///             for adapter in iter {
-///                 println!("{:?}", adapter);
-///             }
-///
-/// ```
 #[derive(Debug)]
 pub struct AdapterInfo {
     pub(crate) adapter_name: String,
