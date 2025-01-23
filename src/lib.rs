@@ -1,5 +1,6 @@
 mod windows;
 
+pub use windows::{AdapterInfo,get_all_adapter_info};
 
 #[cfg(test)]
 mod tests {
